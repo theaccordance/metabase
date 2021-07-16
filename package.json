@@ -1,0 +1,10 @@
+{
+  "name": "@mainwaring.dev/metabase",
+  "version": "1.0.0",
+  "description": "BI Tooling & Import Scripts ",
+  "main": "gruntfile.js",
+  "repository": "git@github.com:theaccordance/metabase.git",
+  "author": "Joe Mainwaring",
+  "license": "MIT",
+  "private": true
+}
