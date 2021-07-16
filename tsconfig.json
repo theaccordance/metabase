@@ -6,6 +6,7 @@
     "importHelpers": true,
     "lib": ["es6"],
     "module": "esnext",
+    "moduleResolution": "Node",
     "outDir": "lib",
     "rootDir": "src",
     "strict": true,

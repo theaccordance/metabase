@@ -1,7 +1,7 @@
 import {Entity, ObjectIdColumn, ObjectID, Column} from "typeorm";
 
-@Entity()
-export class StyvioSymbol {
+@Entity({name: "ticker_symbols"})
+export class TickerSymbol {
 
   @ObjectIdColumn()
   id: ObjectID;
