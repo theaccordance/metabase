@@ -1,6 +1,9 @@
 #JetBrains
 .idea
 
+# dotenv
+.dotenv
+
 # Logs
 logs
 *.log
