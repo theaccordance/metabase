@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
     "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "importHelpers": true,
-    "module": "commonjs",
+    "lib": ["es6"],
+    "module": "esnext",
     "outDir": "lib",
     "rootDir": "src",
     "strict": true,
