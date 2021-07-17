@@ -3,7 +3,7 @@ name: "Styvio Data Import"
 on:
   schedule:
     # Run every day at 4:15am
-    - cron: "0 15 4 * * ?"
+    - cron: "15 4 * * 0-6"
 jobs:
   import:
     name: "Import Data from Styvio"
