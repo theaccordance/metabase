@@ -4,6 +4,7 @@ on:
   schedule:
     # Run every day at 4:15am
     - cron: "15 4 * * 0-6"
+  workflow_dispatch:
 jobs:
   import:
     name: "Import Data from Styvio"
