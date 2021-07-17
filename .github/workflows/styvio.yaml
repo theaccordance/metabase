@@ -1,0 +1,24 @@
+name: "Styvio Data Import"
+
+on:
+  schedule:
+    # Run every day at 4:15am
+    - cron: "0 15 4 * * ?"
+jobs:
+  import:
+    name: "Import Data from Styvio"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+          uses: actions/checkout@v2
+      - name: Use Node.js 14.x
+          uses: actions/setup-node@v1
+          with:
+            node-version: 14.x
+      - name: Install Dependencies
+        run: |
+          yarn install
+          yarn link
+      - name: Import Ticker Symbol Data
+        run: mbimport styvio:ticker

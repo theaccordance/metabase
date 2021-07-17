@@ -68,10 +68,5 @@ export default class Ticker extends Command {
         this.log(`Error saving record for ${ticker}, skipping import`)
       }
     }
-    // Styvio Ticker Import Task starting
-    // Connect to database
-    // Fetching list of available symbols
-    // Fetching ${symbol} => create/update record
-    // Task Summary => count of updated/
   }
 }
