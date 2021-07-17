@@ -22,4 +22,4 @@ jobs:
           yarn install
           yarn link
       - name: Import Ticker Symbol Data
-        run: mbimport styvio:ticker
+        run: yarn mbimport styvio:ticker
