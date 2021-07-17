@@ -6,7 +6,7 @@ export class TickerSymbol {
   @ObjectIdColumn()
   id: ObjectID;
 
-  @Column()
+  @Column({name: "ticker", unique: true, nullable: false})
   ticker: string;
 
   @Column()

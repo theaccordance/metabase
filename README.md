@@ -28,28 +28,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`mbimport hello [FILE]`](#mbimport-hello-file)
 * [`mbimport help [COMMAND]`](#mbimport-help-command)
-
-## `mbimport hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ mbimport hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ mbimport hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/metabase/mbimport/blob/v0.0.0/src/commands/hello.ts)_
+* [`mbimport styvio-ticker [FILE]`](#mbimport-styvio-ticker-file)
 
 ## `mbimport help [COMMAND]`
 
@@ -67,4 +47,20 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
+
+## `mbimport styvio-ticker [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ mbimport styvio-ticker [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/styvio-ticker.ts](https://github.com/metabase/mbimport/blob/v0.0.0/src/commands/styvio-ticker.ts)_
 <!-- commandsstop -->
