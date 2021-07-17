@@ -10,9 +10,7 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^3",
-    "@types/convict": "6.1.0",
     "axios": "^0.21.1",
-    "convict": "^6.1.0",
     "dotenv": "^10.0.0",
     "mongodb": "3.6.10",
     "reflect-metadata": "^0.1.13",
@@ -61,6 +59,7 @@
   },
   "repository": "metabase/mbimport",
   "scripts": {
+    "build": "rm -rf lib && tsc",
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
