@@ -21,5 +21,5 @@ jobs:
         run: |
           yarn install
           yarn link
-          yarn link "mbimport"å
+          yarn link "mbimport"
           mbimport styvio:ticker
