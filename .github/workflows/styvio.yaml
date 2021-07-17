@@ -17,10 +17,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
-      - name: Install Dependencies
+      - name: Install Dependencies & Run Import Task
         run: |
           yarn install
           yarn link
-          yarn link "mbimport"
-      - name: Import Ticker Symbol Data
-        run: yarn mbimport styvio:ticker
+          yarn mbimport styvio:ticker
