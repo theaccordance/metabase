@@ -46,7 +46,7 @@ export default class Ticker extends Command {
         return response.data;
       });
 
-      const tickerRecord = tickerRepo.create(tickerData);
+      const [tickerRecord] = tickerRepo.create(tickerData);
 
       if (tickerRecord?.ticker) {
         const existingRecord = await tickerRepo.findOne({ticker});
